@@ -1,0 +1,19 @@
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">Home</a></li>
+  <li>
+    <a href="framework.html">Framework</a>
+  </li>
+  <li>
+    <a href="handover.html">Handover Use Case</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts<b class="caret">
+    </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="messagedefinitions.html">Message Definitions</a>
+      </li>
+    </ul>
+  </li>
+</ul>      
