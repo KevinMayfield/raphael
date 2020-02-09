@@ -1,0 +1,12 @@
+{
+  "url": "https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/uec-raphael-stu3",
+  "name": "UEC Raphael",
+  "package-id": "uec-raphael-stu3",
+  "ig-ver": "0.2.0",
+  "date": "Sun, 09 Feb, 2020 08:57:49 +0000",
+  "errs": 40,
+  "warnings": 2,
+  "hints": 12,
+  "version": "3.0.2",
+  "tool": "4.2.0 (3)"
+}

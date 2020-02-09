@@ -1,0 +1,233 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 2, errors = 20, warn = 1, info = 6 -->
+<head>
+  <title>UEC Raphael : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for UEC Raphael</h1>
+ <p>Generated Sun Feb 09 08:58:03 GMT 2020, FHIR version 3.0.2 for uec-raphael-stu3#0.2.0 (canonical = <a href="https://kevinmayfield.github.io/careconnect-api-stu3">https://kevinmayfield.github.io/careconnect-api-stu3</a> (<a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">history</a>))</p>
+<p>IG Publisher Version: v1.0.62-SNAPSHOT</p>
+<p><a href="#suppressed">10 Suppressed Errors</a></p>
+ <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_NHSD_raphael_input_ImplementationGuideRaphael"><b>/Users/kevinmayfield/Development/NHSD/raphael/input/ImplementationGuideRaphael</b></a></td><td><b>7</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_NHSD_raphael_input_examples_Patient-example"><b>/Users/kevinmayfield/Development/NHSD/raphael/input/examples/Patient-example</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_NHSD_raphael_input_resources_messagedefinition_cancel-patient-referral"><b>/Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/cancel-patient-referral</b></a></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_NHSD_raphael_input_resources_messagedefinition_modify-patient-referral"><b>/Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/modify-patient-referral</b></a></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_NHSD_raphael_input_resources_messagedefinition_notification-admit"><b>/Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/notification-admit</b></a></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_NHSD_raphael_input_resources_messagedefinition_notification-discharge"><b>/Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/notification-discharge</b></a></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_NHSD_raphael_input_resources_messagedefinition_patient-referral"><b>/Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/patient-referral</b></a></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_NHSD_raphael_input_resources_messagedefinition_response-patient-referral"><b>/Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/response-patient-referral</b></a></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td><b>Unable to find name for the resource Patient/example.  Names are mandatory to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Patient/example.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_NHSD_raphael_input_ImplementationGuideRaphael"> </a>
+<h2><a href="ImplementationGuide-uec-raphael-stu3.html">/Users/kevinmayfield/Development/NHSD/raphael/input/ImplementationGuideRaphael.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:ImplementationGuide</b></td><td><b>error</b></td><td><b>Undefined element 'title'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:ImplementationGuide</b></td><td><b>error</b></td><td><b>Undefined element 'packageId'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:ImplementationGuide</b></td><td><b>error</b></td><td><b>Undefined element 'license'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:ImplementationGuide</b></td><td><b>error</b></td><td><b>Undefined element 'dependsOn'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/f:ImplementationGuide</b></td><td><b>error</b></td><td><b>Undefined element 'definition'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide/uec-raphael-stu3: ImplementationGuide.dependency[0]</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide/uec-raphael-stu3: ImplementationGuide.dependency[0]</b></td><td><b>error</b></td><td><b>The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_NHSD_raphael_input_examples_Patient-example"> </a>
+<h2><a href="Patient-example.html">/Users/kevinmayfield/Development/NHSD/raphael/input/examples/Patient-example.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Patient/example: Patient.extension[0]</b></td><td><b>error</b></td><td><b>The extension http://somewhere.org/fhir/uv/myig/StructureDefinition/ext-myExtension is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/example: Patient.meta.profile[0]</b></td><td><b>warning</b></td><td><b>Profile reference 'http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient' could not be resolved, so has not been checked</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_NHSD_raphael_input_resources_messagedefinition_cancel-patient-referral"> </a>
+<h2><a href="MessageDefinition-cancel-patient-referral.html">/Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/cancel-patient-referral.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral</b></td><td><b>error</b></td><td><b>Conformance resource /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/cancel-patient-referral.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/cancel-patient-referral) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MessageDefinition/cancel-patient-referral: MessageDefinition.event</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/cancel-patient-referral</b></td><td><b>error</b></td><td><b>URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/cancel-patient-referral vs https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_NHSD_raphael_input_resources_messagedefinition_modify-patient-referral"> </a>
+<h2><a href="MessageDefinition-modify-patient-referral.html">/Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/modify-patient-referral.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>https://kevinmayfield.github.io/raphael/MessageDefinition/modify-patient-referral</b></td><td><b>error</b></td><td><b>Conformance resource /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/modify-patient-referral.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/modify-patient-referral) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/modify-patient-referral)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MessageDefinition/modify-patient-referral: MessageDefinition.event</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/modify-patient-referral</b></td><td><b>error</b></td><td><b>URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/modify-patient-referral vs https://kevinmayfield.github.io/raphael/MessageDefinition/modify-patient-referral</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_NHSD_raphael_input_resources_messagedefinition_notification-admit"> </a>
+<h2><a href="MessageDefinition-notification-admit.html">/Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/notification-admit.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>https://kevinmayfield.github.io/raphael/MessageDefinition/notification-admit</b></td><td><b>error</b></td><td><b>Conformance resource /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/notification-admit.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/notification-admit) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/notification-admit)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MessageDefinition/notification-admit: MessageDefinition.event</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/notification-admit</b></td><td><b>error</b></td><td><b>URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/notification-admit vs https://kevinmayfield.github.io/raphael/MessageDefinition/notification-admit</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_NHSD_raphael_input_resources_messagedefinition_notification-discharge"> </a>
+<h2><a href="MessageDefinition-notification-discharge.html">/Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/notification-discharge.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>https://kevinmayfield.github.io/raphael/MessageDefinition/notification-discharge</b></td><td><b>error</b></td><td><b>Conformance resource /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/notification-discharge.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/notification-discharge) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/notification-discharge)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MessageDefinition/notification-discharge: MessageDefinition.event</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/notification-discharge</b></td><td><b>error</b></td><td><b>URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/notification-discharge vs https://kevinmayfield.github.io/raphael/MessageDefinition/notification-discharge</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_NHSD_raphael_input_resources_messagedefinition_patient-referral"> </a>
+<h2><a href="MessageDefinition-patient-referral.html">/Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/patient-referral.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>https://kevinmayfield.github.io/raphael/MessageDefinition/patient-referral</b></td><td><b>error</b></td><td><b>Conformance resource /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/patient-referral.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/patient-referral) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/patient-referral)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MessageDefinition/patient-referral: MessageDefinition.event</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/patient-referral</b></td><td><b>error</b></td><td><b>URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/patient-referral vs https://kevinmayfield.github.io/raphael/MessageDefinition/patient-referral</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_NHSD_raphael_input_resources_messagedefinition_response-patient-referral"> </a>
+<h2><a href="MessageDefinition-response-patient-referral.html">/Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/response-patient-referral.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>https://kevinmayfield.github.io/raphael/MessageDefinition/response-patient-referral</b></td><td><b>error</b></td><td><b>Conformance resource /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/response-patient-referral.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/response-patient-referral) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/response-patient-referral)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MessageDefinition/response-patient-referral: MessageDefinition.event</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/response-patient-referral</b></td><td><b>error</b></td><td><b>URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/response-patient-referral vs https://kevinmayfield.github.io/raphael/MessageDefinition/response-patient-referral</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Error Messages</b></p><ul>
+ <li>// Add warning and/or information messages here after you've confirmed that they aren't really a problem</li>
+ <li>// (And include comments like this justifying why)</li>
+ <li>// This is inherited from the base resource</li>
+ <li>WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace</li>
+ <li>// We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present</li>
+ <li>INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice for the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient</li>
+ <li>INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice for the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient</li>
+ <li>// If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...</li>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation: The Implementation Guide contains no examples for this profile</li>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner: The Implementation Guide contains no examples for this profile</li>
+</ul>
+</body>
+</html>
