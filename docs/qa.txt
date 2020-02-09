@@ -3,7 +3,7 @@
 
 err = 40, warn = 2, info = 12
 IG Publisher Version: v1.0.62-SNAPSHOT
-Generated Sun Feb 09 08:58:03 GMT 2020. FHIR version 3.0.2 for uec-raphael-stu3#0.2.0 (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
+Generated Sun Feb 09 12:28:46 GMT 2020. FHIR version 3.0.2 for uec-raphael-stu3#0.2.0 (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
 
  Build Errors : 1 / 1
  /Users/kevinmayfield/Development/NHSD/raphael/input/ImplementationGuideRaphael : 7 / 0

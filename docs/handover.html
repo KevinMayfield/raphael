@@ -127,35 +127,244 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
+
 <p>This bit covers the technical process flow</p>
 
 <h3 id="fire-and-forget">Fire and Forget</h3>
 
-<p>The existing system</p>
+<p>The existing system …..saf asf asd saf some text some text some text afdsfas a  df adsg adfgdf dffdg fdfdag fdfdg dfgdfagadgliug weuiweiurqiuiwcriruyiurhewcjkrhewjckrwhjrkwehcrkwj end of long sentence.</p>
+
+<h4 id="patient-referral">Patient Referral</h4>
+
+<p style="text-align:center;"><img src="framework/Patient Referral Sequence Diagram.png" alt="Tasks" title="Patient Referral Sequence Diagram" style="width:50%" /></p>
+<p><br />
+<br /></p>
 
 <p><a href="MessageDefinition-patient-referral.html">Patient Referral</a></p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Min</th>
+      <th>Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MessageHeader</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ReferralRequest</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Encounter</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Patient</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Composition (Referral Letter)</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>QuestionaireResponse (Triage)</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 id="exchange-of-fire">Exchange of Fire</h3>
 
 <p>A negotiated referral</p>
 
+<h4 id="response-patient-referral">Response Patient Referral</h4>
+
 <p><a href="MessageDefinition-response-patient-referral.html">Response Patient Referral</a></p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Min</th>
+      <th>Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MessageHeader</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ReferralRequest</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="modify-patient-referral">Modify Patient Referral</h4>
 
 <p><a href="MessageDefinition-modify-patient-referral.html">Modify Patient Referral</a></p>
 
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Min</th>
+      <th>Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MessageHeader</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ReferralRequest</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Encounter</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Patient</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Composition (Referral Letter)</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>QuestionaireResponse (Triage)</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="cancel-patient-referral">Cancel Patient Referral</h4>
+
 <p><a href="MessageDefinition-cancel-patient-referral.html">Cancel Patient Referral</a></p>
 
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Min</th>
+      <th>Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MessageHeader</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>ReferralRequest</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Encounter</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Patient</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3 id="contact-reporting-adt">Contact Reporting (ADT)</h3>
+
+<h4 id="notification-admit">Notification Admit</h4>
 
 <p>Pathway started</p>
 
 <p><a href="MessageDefinition-notification-admit.html">Notification Admit</a></p>
 
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Min</th>
+      <th>Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MessageHeader</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Encounter</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Patient</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="notification-discharge">Notification Discharge</h4>
+
 <p><a href="MessageDefinition-notification-discharge.html">Notification Discharge</a></p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Min</th>
+      <th>Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MessageHeader</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Encounter</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Patient</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
 
 <h3 id="encounter-discovery">Encounter Discovery</h3>
 
-<p><img src="NHS 111 Triage Overview Sequence Diagram.jpg" alt="Repeat Caller Service" width="500" /></p>
+<p>During the triage process a decision is made to refer the patient care to another provider. A service is selected by consulting the NHS 111 Discovery Service, the response contains technical delivery information which is used to sed the clinical document is sent to the provider.</p>
 
 <h3 id="serviceendpoint-discovery">Service/Endpoint Discovery</h3>
 
@@ -163,13 +372,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><a href="https://developer.nhs.uk/apis/uec-tech-standards/clinical_decision_support_api.html">Directory of Service</a></p>
 
-<p><img src="Triage and Referral.jpg" alt="Service Endpoint and Triage" width="500" /></p>
-<p></p>
-
 <h3 id="use-of-pubsub-nems">Use of Pub/Sub (NEMS)</h3>
 
 <p><a href="https://developer.nhs.uk/apis/ems-beta/">National Events Management Service</a></p>
-<p></p>
 
 
 </div>
@@ -183,7 +388,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">NHS Digital</a>.  Package uec-raphael-stu3#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sun, Feb 9, 2020 08:57+0000">2020-02-09</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">NHS Digital</a>.  Package uec-raphael-stu3#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sun, Feb 9, 2020 12:28+0000">2020-02-09</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
