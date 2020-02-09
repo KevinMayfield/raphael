@@ -33,11 +33,11 @@
   <license value="CC0-1.0"/>
   <!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
   <fhirVersion value="3.0.2"/>
-  <dependsOn>
+ <!-- <dependsOn>
     <uri value="https://fhir.hl7.org.uk/STU3/ImplementationGuide/careconnect.base.stu3" />
     <packageId value="careconnect.base.stu3"/>
     <version value="3.0.0"/>
-  </dependsOn>
+  </dependsOn> -->
   <definition>
     <resource>
       <reference>

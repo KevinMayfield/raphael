@@ -1,19 +1,19 @@
 ﻿UEC Raphael : Validation Results
 =========================================
 
-err = 40, warn = 2, info = 12
+err = 46, warn = 2, info = 12
 IG Publisher Version: v1.0.62-SNAPSHOT
-Generated Sun Feb 09 12:28:46 GMT 2020. FHIR version 3.0.2 for uec-raphael-stu3#0.2.0 (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
+Generated Sun Feb 09 14:10:16 GMT 2020. FHIR version 3.0.2 for uec-raphael-stu3#0.2.0 (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
 
  Build Errors : 1 / 1
- /Users/kevinmayfield/Development/NHSD/raphael/input/ImplementationGuideRaphael : 7 / 0
+ /Users/kevinmayfield/Development/NHSD/raphael/input/ImplementationGuideRaphael : 4 / 0
  /Users/kevinmayfield/Development/NHSD/raphael/input/examples/Patient-example : 1 / 1
- /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/cancel-patient-referral : 2 / 1
- /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/modify-patient-referral : 2 / 1
- /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/notification-admit : 2 / 1
- /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/notification-discharge : 2 / 1
- /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/patient-referral : 2 / 1
- /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/response-patient-referral : 2 / 1
+ /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/cancel-patient-referral : 3 / 1
+ /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/modify-patient-referral : 3 / 1
+ /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/notification-admit : 3 / 1
+ /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/notification-discharge : 3 / 1
+ /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/patient-referral : 3 / 1
+ /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/response-patient-referral : 3 / 1
 </table>
 == n/a ==
 ERROR: Unable to find name for the resource Patient/example.  Names are mandatory to allow proper population of the artifact list.
@@ -22,34 +22,37 @@ WARNING: Unable to find description for the resource Patient/example.  Descripti
 ERROR: /f:ImplementationGuide: Undefined element 'title'
 ERROR: /f:ImplementationGuide: Undefined element 'packageId'
 ERROR: /f:ImplementationGuide: Undefined element 'license'
-ERROR: /f:ImplementationGuide: Undefined element 'dependsOn'
 ERROR: /f:ImplementationGuide: Undefined element 'definition'
-ERROR: ImplementationGuide/uec-raphael-stu3: ImplementationGuide.dependency[0]: The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement])
-ERROR: ImplementationGuide/uec-raphael-stu3: ImplementationGuide.dependency[0]: The extension http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version is not allowed to be used at this point (allowed = e:ImplementationGuide.dependsOn; this element is [[ImplementationGuide.dependency, BackboneElement])
 == /Users/kevinmayfield/Development/NHSD/raphael/input/examples/Patient-example.xml ==
 ERROR: Patient/example: Patient.extension[0]: The extension http://somewhere.org/fhir/uv/myig/StructureDefinition/ext-myExtension is unknown, and not allowed here
 WARNING: Patient/example: Patient.meta.profile[0]: Profile reference 'http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient' could not be resolved, so has not been checked
 == /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/cancel-patient-referral.xml ==
 ERROR: https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral: Conformance resource /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/cancel-patient-referral.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/cancel-patient-referral) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral)
 INFORMATION: MessageDefinition/cancel-patient-referral: MessageDefinition.event: Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated
+ERROR: MessageDefinition/cancel-patient-referral: MessageDefinition.focus[0].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1'
 ERROR: /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/cancel-patient-referral: URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/cancel-patient-referral vs https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral
 == /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/modify-patient-referral.xml ==
 ERROR: https://kevinmayfield.github.io/raphael/MessageDefinition/modify-patient-referral: Conformance resource /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/modify-patient-referral.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/modify-patient-referral) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/modify-patient-referral)
 INFORMATION: MessageDefinition/modify-patient-referral: MessageDefinition.event: Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated
+ERROR: MessageDefinition/modify-patient-referral: MessageDefinition.focus[0].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1'
 ERROR: /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/modify-patient-referral: URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/modify-patient-referral vs https://kevinmayfield.github.io/raphael/MessageDefinition/modify-patient-referral
 == /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/notification-admit.xml ==
 ERROR: https://kevinmayfield.github.io/raphael/MessageDefinition/notification-admit: Conformance resource /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/notification-admit.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/notification-admit) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/notification-admit)
 INFORMATION: MessageDefinition/notification-admit: MessageDefinition.event: Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated
+ERROR: MessageDefinition/notification-admit: MessageDefinition.focus[0].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1'
 ERROR: /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/notification-admit: URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/notification-admit vs https://kevinmayfield.github.io/raphael/MessageDefinition/notification-admit
 == /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/notification-discharge.xml ==
 ERROR: https://kevinmayfield.github.io/raphael/MessageDefinition/notification-discharge: Conformance resource /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/notification-discharge.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/notification-discharge) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/notification-discharge)
 INFORMATION: MessageDefinition/notification-discharge: MessageDefinition.event: Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated
+ERROR: MessageDefinition/notification-discharge: MessageDefinition.focus[0].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1'
 ERROR: /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/notification-discharge: URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/notification-discharge vs https://kevinmayfield.github.io/raphael/MessageDefinition/notification-discharge
 == /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/patient-referral.xml ==
 ERROR: https://kevinmayfield.github.io/raphael/MessageDefinition/patient-referral: Conformance resource /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/patient-referral.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/patient-referral) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/patient-referral)
 INFORMATION: MessageDefinition/patient-referral: MessageDefinition.event: Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated
+ERROR: MessageDefinition/patient-referral: MessageDefinition.focus[0].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1'
 ERROR: /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/patient-referral: URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/patient-referral vs https://kevinmayfield.github.io/raphael/MessageDefinition/patient-referral
 == /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/response-patient-referral.xml ==
 ERROR: https://kevinmayfield.github.io/raphael/MessageDefinition/response-patient-referral: Conformance resource /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/response-patient-referral.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/response-patient-referral) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/response-patient-referral)
 INFORMATION: MessageDefinition/response-patient-referral: MessageDefinition.event: Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated
+ERROR: MessageDefinition/response-patient-referral: MessageDefinition.focus[0].profile: Unable to resolve resource 'https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-ReferralRequest-1'
 ERROR: /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/response-patient-referral: URL Mismatch https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/response-patient-referral vs https://kevinmayfield.github.io/raphael/MessageDefinition/response-patient-referral

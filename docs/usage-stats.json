@@ -6,12 +6,6 @@
   "extensions": [],
   "profiles": {},
   "usage": {
-    "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.packageId": [
-      "ImplementationGuide.dependency"
-    ],
-    "http://hl7.org/fhir/4.0/StructureDefinition/extension-ImplementationGuide.dependsOn.version": [
-      "ImplementationGuide.dependency"
-    ],
     "http://somewhere.org/fhir/uv/myig/StructureDefinition/ext-myExtension": [
       "Patient"
     ]

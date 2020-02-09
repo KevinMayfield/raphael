@@ -8,10 +8,11 @@ The existing system .....saf asf asd saf some text some text some text afdsfas a
 
 #### Patient Referral
 
+<div>
 <p style="text-align:center;"><img src="framework/Patient Referral Sequence Diagram.png" alt="Tasks" title="Patient Referral Sequence Diagram" style="width:50%"></p>
 <br />
 <br />
-
+</div>
 
 [Patient Referral](MessageDefinition-patient-referral.html)
 
