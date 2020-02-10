@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 2, errors = 23, warn = 1, info = 6 -->
+<!-- broken links = 0, errors = 30, warn = 0, info = 21 -->
 <head>
   <title>UEC Raphael : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for UEC Raphael</h1>
- <p>Generated Sun Feb 09 14:10:16 GMT 2020, FHIR version 3.0.2 for uec-raphael-stu3#0.2.0 (canonical = <a href="https://kevinmayfield.github.io/careconnect-api-stu3">https://kevinmayfield.github.io/careconnect-api-stu3</a> (<a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">history</a>))</p>
+ <p>Generated Mon Feb 10 10:00:45 GMT 2020, FHIR version 3.0.2 for uec-raphael-stu3#0.2.0 (canonical = <a href="https://kevinmayfield.github.io/careconnect-api-stu3">https://kevinmayfield.github.io/careconnect-api-stu3</a> (<a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">history</a>))</p>
 <p>IG Publisher Version: v1.0.62-SNAPSHOT</p>
 <p><a href="#suppressed">10 Suppressed Errors</a></p>
  <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
@@ -32,14 +32,17 @@
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>1</b></td><td><b>1</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_Users_kevinmayfield_Development_NHSD_raphael_input_ImplementationGuideRaphael"><b>/Users/kevinmayfield/Development/NHSD/raphael/input/ImplementationGuideRaphael</b></a></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_Users_kevinmayfield_Development_NHSD_raphael_input_examples_Patient-example"><b>/Users/kevinmayfield/Development/NHSD/raphael/input/examples/Patient-example</b></a></td><td><b>1</b></td><td><b>1</b></td>
+     <td><a href="#_Users_kevinmayfield_Development_NHSD_raphael_input_examples_Bundle-notification-admit"><b>/Users/kevinmayfield/Development/NHSD/raphael/input/examples/Bundle-notification-admit</b></a></td><td><b>4</b></td><td><b>7</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_kevinmayfield_Development_NHSD_raphael_input_examples_Bundle-notification-discharge"><b>/Users/kevinmayfield/Development/NHSD/raphael/input/examples/Bundle-notification-discharge</b></a></td><td><b>4</b></td><td><b>8</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_Users_kevinmayfield_Development_NHSD_raphael_input_resources_messagedefinition_cancel-patient-referral"><b>/Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/cancel-patient-referral</b></a></td><td><b>3</b></td><td><b>1</b></td>
@@ -64,12 +67,6 @@
 <a name="internal"> </a>
 <h2><a href="">n/a</a></h2>
  <table class="grid">
-   <tr style="background-color: #ffcccc">
-     <td><b></b></td><td><b>error</b></td><td><b>Unable to find name for the resource Patient/example.  Names are mandatory to allow proper population of the artifact list.</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find description for the resource Patient/example.  Descriptions are strongly encouraged to allow proper population of the artifact list.</b></td>
-   </tr>
 </table>
 <hr/>
 <a name="_Users_kevinmayfield_Development_NHSD_raphael_input_ImplementationGuideRaphael"> </a>
@@ -92,17 +89,88 @@
    </tr>
 </table>
 <hr/>
-<a name="_Users_kevinmayfield_Development_NHSD_raphael_input_examples_Patient-example"> </a>
-<h2><a href="Patient-example.html">/Users/kevinmayfield/Development/NHSD/raphael/input/examples/Patient-example.xml</a></h2>
+<a name="_Users_kevinmayfield_Development_NHSD_raphael_input_examples_Bundle-notification-admit"> </a>
+<h2><a href="Bundle-notification-admit.html">/Users/kevinmayfield/Development/NHSD/raphael/input/examples/Bundle-notification-admit.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Patient/example: Patient.extension[0]</b></td><td><b>error</b></td><td><b>The extension http://somewhere.org/fhir/uv/myig/StructureDefinition/ext-myExtension is unknown, and not allowed here</b></td>
+     <td><b>Bundle/notification-admit: Bundle.entry[0].resource</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Patient/example: Patient.meta.profile[0]</b></td><td><b>warning</b></td><td><b>Profile reference 'http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient' could not be resolved, so has not been checked</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-admit: Bundle.entry[0].resource.destination[0]</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit: Bundle.entry[1].resource.type[0].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit: Bundle.entry[1].resource.type[1].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/notification-admit: Bundle.entry[1].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl8" class="flip" onclick="flip('l8')">Show Reasoning</span><div id="l8" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit: Bundle.entry[1].resource.hospitalization.admitSource</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit: Bundle.entry[1].resource.hospitalization.admitSource.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/notification-admit: Bundle.entry[1].resource.location[0].location</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc matching against Profilehttp://hl7.org/fhir/StructureDefinition/Location</b> <span id="sl11" class="flip" onclick="flip('l11')">Show Reasoning</span><div id="l11" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-admit: Bundle.entry[2].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-admit: Bundle.entry[2].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-admit: Bundle.entry[3].resource.identifier[0]</b></td><td><b>error</b></td><td><b>Identifier.system must be an absolute reference, not a local reference</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_kevinmayfield_Development_NHSD_raphael_input_examples_Bundle-notification-discharge"> </a>
+<h2><a href="Bundle-notification-discharge.html">/Users/kevinmayfield/Development/NHSD/raphael/input/examples/Bundle-notification-discharge.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-discharge: Bundle.entry[0].resource</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-discharge: Bundle.entry[0].resource.destination[0]</b></td><td><b>error</b></td><td><b>Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge: Bundle.entry[1].resource.type[0].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge: Bundle.entry[1].resource.type[1].coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/notification-discharge: Bundle.entry[1].resource.subject</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:9d484b53-dc19-42f0-b59e-b52464fd2ef4 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient</b> <span id="sl19" class="flip" onclick="flip('l19')">Show Reasoning</span><div id="l19" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[2].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge: Bundle.entry[1].resource.hospitalization.admitSource</b></td><td><b>information</b></td><td><b>None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#79)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge: Bundle.entry[1].resource.hospitalization.admitSource.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge: Bundle.entry[1].resource.hospitalization.dischargeDisposition.coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeMethod' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle/notification-discharge: Bundle.entry[1].resource.location[0].location</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:oid:a7d2a902-723b-4c78-ac58-d1a9a6e914ab matching against Profilehttp://hl7.org/fhir/StructureDefinition/Location</b> <span id="sl23" class="flip" onclick="flip('l23')">Show Reasoning</span><div id="l23" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[3].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-discharge: Bundle.entry[2].resource.identifier[0].extension[0]</b></td><td><b>error</b></td><td><b>The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle/notification-discharge: Bundle.entry[2].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]</b></td><td><b>information</b></td><td><b>Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle/notification-discharge: Bundle.entry[3].resource.identifier[0]</b></td><td><b>error</b></td><td><b>Identifier.system must be an absolute reference, not a local reference</b></td>
    </tr>
 </table>
 <hr/>

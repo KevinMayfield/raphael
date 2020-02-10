@@ -80,6 +80,9 @@
       <li>
         <a href="messagedefinitions.html">Message Definitions</a>
       </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
     </ul>
   </li>
 </ul>      
@@ -118,17 +121,96 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#details-on-framework" id="markdown-toc-details-on-framework">Details on framework</a></li>
+  <li><a href="#patient-handover-journey" id="markdown-toc-patient-handover-journey">Patient Handover Journey</a></li>
+  <li><a href="#handover-message-specifications" id="markdown-toc-handover-message-specifications">Handover Message Specifications</a></li>
+  <li><a href="#handover-general-structure" id="markdown-toc-handover-general-structure">Handover General Structure</a></li>
 </ul>
 
 </div>
-<h3 id="details-on-framework">Details on framework</h3>
+<h3 id="patient-handover-journey">Patient Handover Journey</h3>
 
 <p>Overview of the process -</p>
 
 <p>introduction to the technical side of the process</p>
 
-<p><img src="ActorTransactionXBER.png" alt="Basic Workflow" /></p>
+<h4 id="patient-handover-journey-current">Patient Handover Journey Current</h4>
+
+<p><img src="framework/Patient Journey.png" alt="Patient Handover Current" />
+<br clear="all" /></p>
+
+<h4 id="patient-handover-journey-future-options">Patient Handover Journey Future Options</h4>
+
+<ol>
+  <li>The Referral Request becomes a two way process which can include:
+    <ul>
+      <li>Acceptance or rejected of a handover</li>
+      <li>Updating a handover request</li>
+      <li>Cancelling a handover request</li>
+    </ul>
+  </li>
+  <li>Workflow Monitoring is enhanced by the ability to send real time ADT notifications which complement the referral event triggers. These include
+    <ul>
+      <li>Notification admit - the start of care provision</li>
+      <li>Notification discharge -  the end of care provision</li>
+    </ul>
+  </li>
+  <li>
+    <p>National Event Messaging Service can used as a Pub/Sub service to distribute the Referral and ADT notifications.</p>
+  </li>
+  <li>Directory of Service will be reused by NHS 999 for Endpoint discovery. ‘Do they already do this?’</li>
+</ol>
+
+<p><img src="framework/Patient Journey Future.png" alt="Patient Handover Future" />
+<br clear="all" /></p>
+
+<h3 id="handover-message-specifications">Handover Message Specifications</h3>
+
+<p>Majority of these exchanges are verbal and/or document clinically focused exchanges (paper or pdf) and are used to transfer the care of the patient from one care provider to another. The technical specifications used in UEC are also focused on the exchange clinical documents:</p>
+
+<ul>
+  <li><a href="https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/messages.html">NHS 111 -&gt; NHS 999 Handover</a> - Integrated Urgent Care Ambulance Request (REPC_MT200001GB02) 
+This is used to transfer the care of patient from the NHS 111 service to the NHS 999 Service</li>
+  <li><a href="https://data.developer.nhs.uk/dms/IUC-3.0-RC1/Domains/messages.html">NHS 111 -&gt; NHS 111</a> - Integrated Urgent Care Report (POCD_MT200001GB02)
+This is used to transfer the care of the patient to another NHS 111 service</li>
+  <li><a href="https://theprsb.org/standards/ambulancehandover/">NHS 999 -&gt; ED</a> - AMBULANCE HANDOVER TO EMERGENCY CARE STANDARD
+This is used to transfer the care of the patient from NHS 999 to an Emergency Department</li>
+</ul>
+
+<p><img src="framework/UEC Referral Letter Flow.jpg" alt="UEC Message Flows" />
+<br clear="all" /></p>
+
+<h3 id="handover-general-structure">Handover General Structure</h3>
+
+<p>The clinical model is a technical structure which a coherent set of information that is a statement of healthcare information, including clinical observations and services. It is often called a structured document to distinguish it from other documents formats such as html, pdf or word. 
+There are two main document standards in use within NHS:</p>
+
+<ul>
+  <li>Clinical Document Architecture (CDA)
+    <ul>
+      <li>XML standard based on HL7 version 3</li>
+      <li>Used by NHS 111 Integrated Urgent Care Ambulance Request and Integrated Urgent Care Report</li>
+    </ul>
+  </li>
+  <li>FHIR Document
+    <ul>
+      <li>JSON/XML standard based on HL7 FHIR.</li>
+      <li>Being used for NHS 999 AMBULANCE HANDOVER TO EMERGENCY CARE STANDARD</li>
+      <li>Used by NHS Emergency Departments for Discharge Letters</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The two standards are related and consist of structured elements such as</p>
+<ul>
+  <li>Patient - Which contains the Patient demographics</li>
+  <li>Encounter - Which contains basic details of the clinical encounter such as start and end times, problem, service type, etc</li>
+  <li>ReferralRequest - Details of what action is required, by whom and who created the request.</li>
+</ul>
+
+<p>The sections are html based and may reference structured clinical items such as Observations. Both Clinical Formats can easily be converted to html pages (see below) and so can be used with providers at different stages of maturity and different capabilities.</p>
+
+<p><img src="framework/Clinical Document.png" alt="Clinical Document" />
+<br clear="all" /></p>
 
 
 </div>
@@ -142,7 +224,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">NHS Digital</a>.  Package uec-raphael-stu3#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sun, Feb 9, 2020 14:10+0000">2020-02-09</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">NHS Digital</a>.  Package uec-raphael-stu3#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Mon, Feb 10, 2020 10:00+0000">2020-02-10</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

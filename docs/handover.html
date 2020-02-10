@@ -80,6 +80,9 @@
       <li>
         <a href="messagedefinitions.html">Message Definitions</a>
       </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
     </ul>
   </li>
 </ul>      
@@ -134,13 +137,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The existing system …..saf asf asd saf some text some text some text afdsfas a  df adsg adfgdf dffdg fdfdag fdfdg dfgdfagadgliug weuiweiurqiuiwcriruyiurhewcjkrhewjckrwhjrkwehcrkwj end of long sentence.</p>
 
-<h4 id="patient-referral">Patient Referral</h4>
-
 <div>
-  <p style="text-align:center;"><img src="framework/Patient Referral Sequence Diagram.png" alt="Tasks" title="Patient Referral Sequence Diagram" style="width:50%" /></p>
-  <p><br />
+  <p style="text-align:center;"><img src="framework/Patient Referral Sequence Diagram.png" alt="Tasks" title="Patient Referral Sequence Diagram" /></p>
+  <p><br clear="all" />
 <br /></p>
 </div>
+
+<h4 id="patient-referral">Patient Referral</h4>
 
 <p><a href="MessageDefinition-patient-referral.html">Patient Referral</a></p>
 
@@ -189,6 +192,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="exchange-of-fire">Exchange of Fire</h3>
 
 <p>A negotiated referral</p>
+
+<div>
+  <p style="text-align:center;"><img src="framework/Patient Referral plus Response Patient Referral Sequence Diagram.png" alt="Tasks" title="Patient Referral plus Response Patient Referral Sequence Diagram" style="width:50%" /></p>
+  <p><br clear="all" />
+<br /></p>
+</div>
 
 <h4 id="response-patient-referral">Response Patient Referral</h4>
 
@@ -300,11 +309,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="contact-reporting-adt">Contact Reporting (ADT)</h3>
 
+<p>This partly exists, the XXXReport is sent to the Repeat Caller Service</p>
+<div>
+  <p style="text-align:center;"><img src="framework/Patient Referral plus ADT Notifications Sequence Diagram.png" alt="Tasks" title="Patient Referral plus ADT Notifications Sequence Diagram" style="width:75%" /></p>
+  <p><br clear="all" />
+<br /></p>
+</div>
+
 <h4 id="notification-admit">Notification Admit</h4>
 
 <p>Pathway started</p>
 
-<p><a href="MessageDefinition-notification-admit.html">Notification Admit</a></p>
+<p>Message Definition <a href="MessageDefinition-notification-admit.html">Notification Admit</a></p>
+
+<p>Example <a href="Bundle-notification-admit.html">Notification Admit</a></p>
 
 <table class="grid">
   <thead>
@@ -335,7 +353,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="notification-discharge">Notification Discharge</h4>
 
-<p><a href="MessageDefinition-notification-discharge.html">Notification Discharge</a></p>
+<p>Message Definition <a href="MessageDefinition-notification-discharge.html">Notification Discharge</a></p>
+
+<p>Example <a href="Bundle-notification-discharge.html">Notification Discharge</a></p>
 
 <table class="grid">
   <thead>
@@ -368,11 +388,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>During the triage process a decision is made to refer the patient care to another provider. A service is selected by consulting the NHS 111 Discovery Service, the response contains technical delivery information which is used to sed the clinical document is sent to the provider.</p>
 
+<div>
+  <p style="text-align:center;"><img src="framework/NHS 111 Triage Overview Sequence Diagram.jpg" alt="Tasks" title="NHS 111 Triage Overview Sequence Diagram" /></p>
+  <p><br clear="all" />
+<br /></p>
+</div>
+
 <h3 id="serviceendpoint-discovery">Service/Endpoint Discovery</h3>
 
 <p>Allows responder to indentify services</p>
 
 <p><a href="https://developer.nhs.uk/apis/uec-tech-standards/clinical_decision_support_api.html">Directory of Service</a></p>
+
+<div>
+  <p style="text-align:center;"><img src="framework/Triage and Referral.jpg" alt="Tasks" title="Triage and Referral" /></p>
+  <p><br clear="all" />
+<br /></p>
+</div>
 
 <h3 id="use-of-pubsub-nems">Use of Pub/Sub (NEMS)</h3>
 
@@ -390,7 +422,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">NHS Digital</a>.  Package uec-raphael-stu3#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sun, Feb 9, 2020 14:10+0000">2020-02-09</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">NHS Digital</a>.  Package uec-raphael-stu3#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Mon, Feb 10, 2020 10:00+0000">2020-02-10</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

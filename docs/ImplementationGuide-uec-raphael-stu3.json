@@ -10,7 +10,7 @@
   "name": "UEC Raphael",
   "status": "draft",
   "experimental": false,
-  "date": "2020-02-09T14:10:06+00:00",
+  "date": "2020-02-10T10:00:33+00:00",
   "publisher": "NHS Digital",
   "contact": [
     {
@@ -57,6 +57,11 @@
       {
         "source": "messagedefinitions.html",
         "title": "Message Definitions",
+        "kind": "resource"
+      },
+      {
+        "source": "examples.html",
+        "title": "Examples",
         "kind": "resource"
       },
       {

@@ -2,9 +2,6 @@
 <!-- Start by finding all references to "myig" and updating to appropriate text for your IG, including changing realm -->
 <ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../input-cache/schemas/R5/fhir-single.xsd">
   <id value="uec-raphael-stu3"/>
-<!--  <extension url="http://hl7.org/fhir/tools/StructureDefinition/igpublisher-spreadsheet">
-    <valueString value="resources-spreadsheet.xml"/>
-  </extension>-->
   <url value="https://kevinmayfield.github.io/careconnect-api-stu3/ImplementationGuide/uec-raphael-stu3"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.2.0"/>
@@ -39,6 +36,22 @@
     <version value="3.0.0"/>
   </dependsOn> -->
   <definition>
+    <resource>
+      <reference>
+        <reference value="Bundle/notification-admit"></reference>
+      </reference>
+      <name value="Notification Admit Example"></name>
+      <description value="Notification Admit Example"></description>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <reference>
+        <reference value="Bundle/notification-discharge"></reference>
+      </reference>
+      <name value="Notification Discharge Example"></name>
+      <description value="Notification Discharge Example"></description>
+      <exampleBoolean value="true"/>
+    </resource>
     <resource>
       <reference>
         <reference value="MessageDefinition/patient-referral"/>
@@ -104,6 +117,11 @@
       <page>
         <nameUrl value="messagedefinitions.html"/>
         <title value="Message Definitions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="examples.html"/>
+        <title value="Examples"/>
         <generation value="markdown"/>
       </page>
       <page>

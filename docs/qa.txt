@@ -1,13 +1,14 @@
 ﻿UEC Raphael : Validation Results
 =========================================
 
-err = 46, warn = 2, info = 12
+err = 60, warn = 0, info = 42
 IG Publisher Version: v1.0.62-SNAPSHOT
-Generated Sun Feb 09 14:10:16 GMT 2020. FHIR version 3.0.2 for uec-raphael-stu3#0.2.0 (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
+Generated Mon Feb 10 10:00:45 GMT 2020. FHIR version 3.0.2 for uec-raphael-stu3#0.2.0 (canonical = https://kevinmayfield.github.io/careconnect-api-stu3)
 
- Build Errors : 1 / 1
+ Build Errors : 0 / 0
  /Users/kevinmayfield/Development/NHSD/raphael/input/ImplementationGuideRaphael : 4 / 0
- /Users/kevinmayfield/Development/NHSD/raphael/input/examples/Patient-example : 1 / 1
+ /Users/kevinmayfield/Development/NHSD/raphael/input/examples/Bundle-notification-admit : 4 / 7
+ /Users/kevinmayfield/Development/NHSD/raphael/input/examples/Bundle-notification-discharge : 4 / 8
  /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/cancel-patient-referral : 3 / 1
  /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/modify-patient-referral : 3 / 1
  /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/notification-admit : 3 / 1
@@ -16,16 +17,36 @@ Generated Sun Feb 09 14:10:16 GMT 2020. FHIR version 3.0.2 for uec-raphael-stu3#
  /Users/kevinmayfield/Development/NHSD/raphael/input/resources/messagedefinition/response-patient-referral : 3 / 1
 </table>
 == n/a ==
-ERROR: Unable to find name for the resource Patient/example.  Names are mandatory to allow proper population of the artifact list.
-WARNING: Unable to find description for the resource Patient/example.  Descriptions are strongly encouraged to allow proper population of the artifact list.
 == /Users/kevinmayfield/Development/NHSD/raphael/input/ImplementationGuideRaphael.xml ==
 ERROR: /f:ImplementationGuide: Undefined element 'title'
 ERROR: /f:ImplementationGuide: Undefined element 'packageId'
 ERROR: /f:ImplementationGuide: Undefined element 'license'
 ERROR: /f:ImplementationGuide: Undefined element 'definition'
-== /Users/kevinmayfield/Development/NHSD/raphael/input/examples/Patient-example.xml ==
-ERROR: Patient/example: Patient.extension[0]: The extension http://somewhere.org/fhir/uv/myig/StructureDefinition/ext-myExtension is unknown, and not allowed here
-WARNING: Patient/example: Patient.meta.profile[0]: Profile reference 'http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient' could not be resolved, so has not been checked
+== /Users/kevinmayfield/Development/NHSD/raphael/input/examples/Bundle-notification-admit.json ==
+ERROR: Bundle/notification-admit: Bundle.entry[0].resource: Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0
+ERROR: Bundle/notification-admit: Bundle.entry[0].resource.destination[0]: Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0
+INFORMATION: Bundle/notification-admit: Bundle.entry[1].resource.type[0].coding[0]: Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod' is unknown so the code cannot be validated
+INFORMATION: Bundle/notification-admit: Bundle.entry[1].resource.type[1].coding[0]: Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1' is unknown so the code cannot be validated
+INFORMATION: Bundle/notification-admit: Bundle.entry[1].resource.subject: Details for urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/notification-admit: Bundle.entry[1].resource.hospitalization.admitSource: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#19)
+INFORMATION: Bundle/notification-admit: Bundle.entry[1].resource.hospitalization.admitSource.coding[0]: Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission' is unknown so the code cannot be validated
+INFORMATION: Bundle/notification-admit: Bundle.entry[1].resource.location[0].location: Details for urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc matching against Profilehttp://hl7.org/fhir/StructureDefinition/Location
+ERROR: Bundle/notification-admit: Bundle.entry[2].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here
+INFORMATION: Bundle/notification-admit: Bundle.entry[2].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated
+ERROR: Bundle/notification-admit: Bundle.entry[3].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+== /Users/kevinmayfield/Development/NHSD/raphael/input/examples/Bundle-notification-discharge.json ==
+ERROR: Bundle/notification-discharge: Bundle.entry[0].resource: Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.source': minimum required = 1, but only found 0
+ERROR: Bundle/notification-discharge: Bundle.entry[0].resource.destination[0]: Profile http://hl7.org/fhir/StructureDefinition/MessageHeader, Element 'Bundle.entry[0].resource.destination[0].endpoint': minimum required = 1, but only found 0
+INFORMATION: Bundle/notification-discharge: Bundle.entry[1].resource.type[0].coding[0]: Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdmissionMethod' is unknown so the code cannot be validated
+INFORMATION: Bundle/notification-discharge: Bundle.entry[1].resource.type[1].coding[0]: Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/DCH-Specialty-1' is unknown so the code cannot be validated
+INFORMATION: Bundle/notification-discharge: Bundle.entry[1].resource.subject: Details for urn:oid:9d484b53-dc19-42f0-b59e-b52464fd2ef4 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/notification-discharge: Bundle.entry[1].resource.hospitalization.admitSource: None of the codes provided are in the value set http://hl7.org/fhir/ValueSet/encounter-admit-source (http://hl7.org/fhir/ValueSet/encounter-admit-source, and a code is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission#79)
+INFORMATION: Bundle/notification-discharge: Bundle.entry[1].resource.hospitalization.admitSource.coding[0]: Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-SourceOfAdmission' is unknown so the code cannot be validated
+INFORMATION: Bundle/notification-discharge: Bundle.entry[1].resource.hospitalization.dischargeDisposition.coding[0]: Code System URI 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-DischargeMethod' is unknown so the code cannot be validated
+INFORMATION: Bundle/notification-discharge: Bundle.entry[1].resource.location[0].location: Details for urn:oid:a7d2a902-723b-4c78-ac58-d1a9a6e914ab matching against Profilehttp://hl7.org/fhir/StructureDefinition/Location
+ERROR: Bundle/notification-discharge: Bundle.entry[2].resource.identifier[0].extension[0]: The extension https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1 is unknown, and not allowed here
+INFORMATION: Bundle/notification-discharge: Bundle.entry[2].resource.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-NHSNumberVerificationStatus-1' is unknown so the code cannot be validated
+ERROR: Bundle/notification-discharge: Bundle.entry[3].resource.identifier[0]: Identifier.system must be an absolute reference, not a local reference
 == /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/cancel-patient-referral.xml ==
 ERROR: https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral: Conformance resource /Users/kevinmayfield/Development/NHSD/raphael/input/resources/MessageDefinition/cancel-patient-referral.xml - the canonical URL (https://kevinmayfield.github.io/careconnect-api-stu3/MessageDefinition/cancel-patient-referral) does not match the URL (https://kevinmayfield.github.io/raphael/MessageDefinition/cancel-patient-referral)
 INFORMATION: MessageDefinition/cancel-patient-referral: MessageDefinition.event: Code System URI 'https://fhir.nhs.uk/STU3/CodeSystem/ITK-MessageEvent-2' is unknown so the code cannot be validated

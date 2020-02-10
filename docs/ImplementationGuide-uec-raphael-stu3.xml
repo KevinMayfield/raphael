@@ -11,7 +11,7 @@
   <name value="UEC Raphael"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2020-02-09T14:10:06+00:00"/>
+  <date value="2020-02-10T10:00:33+00:00"/>
   <publisher value="NHS Digital"/>
   <contact>
     <telecom>
@@ -49,6 +49,11 @@
     <page>
       <source value="messagedefinitions.html"/>
       <title value="Message Definitions"/>
+      <kind value="resource"/>
+    </page>
+    <page>
+      <source value="examples.html"/>
+      <title value="Examples"/>
       <kind value="resource"/>
     </page>
     <page>

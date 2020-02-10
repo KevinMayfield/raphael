@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>UEC-RAPHAEL-STU3\ - XML Representation - FHIR v3.0.2</title>
+    <title>UEC-RAPHAEL-STU3\Notification Admit Example - FHIR v3.0.2</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -37,8 +37,8 @@
   </head>
   <body>
 
-    <style type="text/css">h2{--heading-prefix:"6.7"}
-    h3,h4,h5,h6{--heading-prefix:"6.7"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.7"}
+    h3,h4,h5,h6{--heading-prefix:"7.7"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         
@@ -80,6 +80,9 @@
       <li>
         <a href="messagedefinitions.html">Message Definitions</a>
       </li>
+      <li>
+        <a href="examples.html">Examples</a>
+      </li>
     </ul>
   </li>
 </ul>      
@@ -94,7 +97,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b></b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Notification Admit Example</b></li>
         </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -103,66 +106,41 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
+
+
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">UEC Raphael - Local Development build (v0.2.0). See the <a href="https://kevinmayfield.github.io/careconnect-api-stu3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <a name="root"> </a>
-  <h2 id="root"> - XML Representation</h2>
+  <h2 id="root">Notification Admit Example</h2>
   <p>
-    <a href="Patient-example.html">(back to description)</a>
+    Format(s):
   </p>
-  <p>
-    <a href="Patient-example.xml">Raw xml</a>
-  </p>
-  
-  
-  
-  <p>
-    <b>Source view</b>
-  </p>
-  
-  <pre class="xml">
+  <ul>
 
-&lt;<a href="http://hl7.org/fhir/STU3/patient.html#Patient">Patient</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/patient.html#Patient.id">id</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#id">value</a>=&quot;example&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/patient.html#Patient.meta">meta</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Meta#Meta.profile">profile</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">value</a>=&quot;http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient&quot;/&gt;
-  &lt;/meta&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/patient.html#Patient.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: example&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Jack Smith , John Jacob Jingleheimer Smith (OFFICIAL), John Jacob Jingleheimer Smith (OFFICIAL)&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
-  &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/patient.html#Patient.extension">extension</a>
-             <a href="http://hl7.org/fhir/STU3/datatypes.html#uri">url</a>=&quot;http://somewhere.org/fhir/uv/myig/StructureDefinition/ext-myExtension&quot;&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
-  &lt;/extension&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/patient.html#Patient.name">name</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.use">use</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;usual&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.family">family</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Smith&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Jack&quot;/&gt;
-  &lt;/name&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/patient.html#Patient.name">name</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.use">use</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.family">family</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Smith&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;John&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Jacob&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Jingleheimer&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.period">period</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.end">end</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2001-01-01&quot;/&gt;
-    &lt;/period&gt;
-  &lt;/name&gt;
-  &lt;<a href="http://hl7.org/fhir/STU3/patient.html#Patient.name">name</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.use">use</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#code">value</a>=&quot;official&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.family">family</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Smith&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;John&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Jacob&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.given">given</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#string">value</a>=&quot;Jingleheimer&quot;/&gt;
-    &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#HumanName#HumanName.period">period</a>&gt;
-      &lt;<a href="http://hl7.org/fhir/STU3/datatypes.html#Period#Period.start">start</a> <a href="http://hl7.org/fhir/STU3/datatypes.html#dateTime">value</a>=&quot;2001-01-01&quot;/&gt;
-    &lt;/period&gt;
-  &lt;/name&gt;
-&lt;/Patient&gt;</pre>
+    <li>
+      <a href="Bundle-notification-admit.xml.html">XML</a>
+    </li>
 
+
+    <li>
+      <a href="Bundle-notification-admit.json.html">JSON</a> 
+    </li>
+
+
+    <li>
+      <a href="Bundle-notification-admit.ttl.html">Turtle</a>
+    </li>
+
+  </ul>
+
+  
+  
+
+  <p>
+    <b>Narrative view</b>
+  </p>
+  <div><p>Bundle notification-admit of type message</p><a name="urn-oid-3d4a07cc-ff85-45c2-8f60-202d5506db02"> </a><a name="messageheader_3d4a07cc-ff85-45c2-8f60-202d5506db02"> </a><hr/><p>Entry 1 - Full URL = urn:oid:3d4a07cc-ff85-45c2-8f60-202d5506db02</p><p>Resource MessageHeader:</p><a name="urn-oid-38eeb5d7-e689-4ec5-81d2-f51f3011c72c"> </a><a name="encounter_38eeb5d7-e689-4ec5-81d2-f51f3011c72c"> </a><hr/><p>Entry 2 - Full URL = urn:oid:38eeb5d7-e689-4ec5-81d2-f51f3011c72c</p><p>Resource Encounter:</p><a name="urn-oid-a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4"> </a><a name="patient_a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4"> </a><hr/><p>Entry 3 - Full URL = urn:oid:a4776fe1-6bb4-4e3c-af5b-d48e1ee873b4</p><p>Resource Patient:</p><a name="urn-oid-335f4089-8979-4bd2-96db-6137c1483ecc"> </a><a name="location_335f4089-8979-4bd2-96db-6137c1483ecc"> </a><hr/><p>Entry 4 - Full URL = urn:oid:335f4089-8979-4bd2-96db-6137c1483ecc</p><p>Resource Location:</p></div>
 
   
   
@@ -177,7 +155,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">NHS Digital</a>.  Package uec-raphael-stu3#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Sun, Feb 9, 2020 14:10+0000">2020-02-09</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="http://hl7.org/Special/committees/[something]">NHS Digital</a>.  Package uec-raphael-stu3#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/STU3/">FHIR 3.0.2</a>. Generated <span title="Mon, Feb 10, 2020 10:00+0000">2020-02-10</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

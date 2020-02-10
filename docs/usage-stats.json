@@ -6,8 +6,8 @@
   "extensions": [],
   "profiles": {},
   "usage": {
-    "http://somewhere.org/fhir/uv/myig/StructureDefinition/ext-myExtension": [
-      "Patient"
+    "https://fhir.hl7.org.uk/STU3/StructureDefinition/Extension-CareConnect-NHSNumberVerificationStatus-1": [
+      "Bundle.entry.resource.identifier"
     ]
   }
 }
